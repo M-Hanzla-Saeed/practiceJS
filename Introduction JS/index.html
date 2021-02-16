@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction JS</title>
+  </head>
+  <body>
+    <!-- javascript can change html content -->
+    <h3 id="demo1">Change HTML Content With Javascript</h3>
+    <h3
+      onclick="document.getElementById('demo1').innerHTML = 'Just On One Click Change The Content Of HTML Tag' "
+    >
+      Click Me..!
+    </h3>
+
+    <h4 onclick="document.getElementById('demo2').innerHTML= 'done change'">
+      click me for change 'change me'
+    </h4>
+    <h4 id="demo2">change me</h4>
+
+    <button
+      type="button"
+      onclick="document.getElementById('demo3').innerHTML= 'haww....! im change'"
+    >
+      click me
+    </button>
+    <p id="demo3">this is me</p>
+
+    <!-- Javascript Change HTML Attributes Values -->
+
+    <h1>what can javascript do?</h1>
+    <p>javascript change the value of 'src' scoure attributes</p>
+
+    <button
+      type="button"
+      onclick="document.getElementById('bulb').src = 'turned-off.png' "
+    >
+      <img src="switch-on.png" style="width: 50px" />
+    </button>
+
+    <img id="bulb" src="turned-on.png" style="width: 200px" />
+
+    <button
+      type="button"
+      type="button"
+      onclick="document.getElementById('bulb').src='turned-on.png' "
+    >
+      <img src="switch-off.png" style="width: 50px" />
+    </button>
+
+    <div>
+      <h3>again make some crazy thing with javascript</h3>
+
+      <p onclick="document.getElementById('gif').src='gifon.gif' ">
+        Click Me To Show GIF
+      </p>
+
+      <img id="gif" src="gif.gif" style="width: 200px" />
+
+      <p onclick="document.getElementById('gif').src='gif.gif' ">
+        Click Me To off GIF
+      </p>
+    </div>
+
+
+    <h1>change the style of html content</h1>
+    
+    <h3>change the style of html content</h3>
+    <button type="button" onclick="document.getElementById('styleChange').style.fontSize= '30px';">click me</button>
+    <p id="styleChange">javacsript change the size of the HTML conrtent</p>
+
+
+    <h3>change the style of html content</h3>
+    <button type="button" onclick="document.getElementById('displayChange').style.display= 'none';">click me to off display</button>
+    <p id="displayChange">javacsript change the display of the HTML conrtent</p>
+
+    <button type="button" onclick="document.getElementById('displayChange').style.display= 'block';">click me to on display</button>
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home JS</title>
+    <style>
+        #demoCss , #demo {
+            cursor: pointer;
+            background-color: rgb(1, 119, 119);
+            color: rgb(255, 251, 251);
+            width: 40vw;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This Is My Ist Javascript Program</h1>
+    <button type="button" onclick = "document.getElementById('dateShow').innerHTML = new Date()">Click Me To Get Just Now Date And Time...!</button>
+    <p id="dateShow"></p>
+
+     <p id="demoCss" ondblclick="document.getElementById('demo').innerHTML = new Date()">New Date And Time</p>
+     <p id="demo"> </p>
+
+     <label onclick="document.getElementById('demo2').innerHTML = Date().toUpperCase()">click me to show date and time</label>
+     <p id="demo2"> </p>
+
+
+</body>
+<script>
+    document.getElementById('demoCss').innerText.toUpperCase()
+
+
+</script>
+</html>

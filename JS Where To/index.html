@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Where To</title>
+</head>
+<script>
+    function myfunction()
+    {
+    document.getElementById('demo1').innerHTML = 'Paragraph Changed'
+    }
+    </script>
+
+<body>
+    <p id="firstJS"></p>
+    <script>
+     document.getElementById('firstJS').innerText = 'My First JavaScript';
+    </script>
+    
+
+
+
+    <h1>JS Where To  {Internal/External} Script Tags</h1>
+    <p>two type of internal script tags one is child of head tag and other is child of body tag</p>
+
+    <p id="demo1"  onclick="myfunction()">Internal Head Tag Paragraph</p>
+    
+
+    
+
+<script>
+     function myfunction1(){
+    
+    document.getElementById('demo2').innerHTML = 'Paragraph Changed'}
+    
+    </script>
+    <p id="demo2" onclick="myfunction1()" >Javascript in body</p>
+
+
+
+    <!--html for external javscript -->
+    <h2>add external javascript</h2>
+    <h4 id="id" onclick="myfunction5()" >change me with external script tag</h4>
+</body>
+<script src="index.js"></script> 
+</html>
